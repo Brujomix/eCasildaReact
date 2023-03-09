@@ -1,0 +1,21 @@
+/* Styles Menu Component */
+
+menu{
+    background-color: $dark;
+
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    button{
+        background-color: $dark;
+        color: $white;
+        font-size: large;
+        &:hover{
+            font-size: x-large;
+        }
+    }
+
+}

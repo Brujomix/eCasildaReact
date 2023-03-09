@@ -4,11 +4,19 @@ import './styles/styles.scss';
 import { NavBarComponent } from './components/NavBarComponent/NavBarComponent';
 import { ItemsMenu } from './components/NavBarComponent/ItemsMenu';
 import { MainComponent } from './components/MainComponent/MainComponent';
+import { MenuComponent, ButtonMenu } from './components/MenuComponent/MenuComponent';
 
 function App() {
   return (
-    <div>
-      {/* ALL "Nav Component" */}
+    <>
+    {/* ALL Menu Component */}
+      
+      <MenuComponent>
+        <ButtonMenu label="e.Casilda" action={()=>{console.log("click e.Casilda")}}/>
+        <ButtonMenu label="Menu" action={()=>{console.log("click Menu")}}/>
+      </MenuComponent>
+
+    {/* ALL "Nav Component" */}
       <NavBarComponent>
         <ItemsMenu 
           B_Color={"#ecabab"} 
@@ -34,7 +42,7 @@ function App() {
       {/* ALL "Main Component" */}
 
       <MainComponent /> 
-    </div>   
+    </>   
   );
 }
 
