@@ -1,0 +1,39 @@
+/* Styles Header */
+
+header{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    border-bottom: 1px solid $dark;
+    background-color: $blue;
+
+    .boxCart{
+        position: relative;
+        padding: 5px;
+        img{
+            width: 80px;
+        }
+        .count{
+            position: absolute;
+            bottom: 5px;
+            padding: 3px;
+            background-color: $dark;
+            color: $white;
+            object-fit: contain;
+            text-align: center;
+            border-radius: 40%;
+            box-shadow: 0px 0px 5px $white;
+        }
+    }
+
+    .logoBusiness{
+        font-size: 2rem;
+        color: $white;
+        &:visited{
+            color: $dark;
+        }
+    }
+}

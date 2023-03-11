@@ -1,0 +1,24 @@
+/* Styles Items Menu */
+
+.ItemsMenu{  
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+    &:hover{
+        height: 60px;
+    }
+
+    span{
+        position: absolute;
+        color: $dark;
+        font-size: large;
+        font-family: 'Sono', sans-serif;
+    }
+    
+    img{
+        width: 137px;      
+    }
+}
